@@ -13,7 +13,9 @@
         public delegate void EmptyHandler();
         public static int threadCount
         {
-            get { return threads.Length; }
+            get => 1;
+            set {}
+            /*get { return threads.Length; }
             set
             {
                 if(value > threads.Length)
@@ -29,7 +31,7 @@
                         ArrayUtility.Add(ref threads, thread);
                     }
                 }
-            }
+            }*/
         }
 #if !UNITY_WSA
         internal class ThreadDef
@@ -163,13 +165,13 @@
 #endif
         }
 
-        public static void PrewarmThreads()
+        /*public static void PrewarmThreads()
         {
             for (int i = 0; i < threads.Length; i++)
             {
                 if (!threads[i].isAlive) threads[i].Restart();
             }
-        }
+        }*/
 
         public static void Stop()
         {
