@@ -724,6 +724,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     Android: DREAMTECK_SPLINES
     Standalone: DREAMTECK_SPLINES
+    Windows Store Apps: DREAMTECK_SPLINES
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
